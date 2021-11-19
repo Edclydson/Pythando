@@ -10,7 +10,7 @@ cardapio = [['Cachorro Quente', '100', '1.20'],
 print("LANCHONETE TABAJARA\n")
 
 while(1 > 0):
-    while(x < contador):
+    while(0 < 1):
         print(lista[c], "   ", lista[c+1], "    ", lista[c+2], "\n")
         for s in cardapio:
             if(type(s) == list):
@@ -41,8 +41,11 @@ while(1 > 0):
             print("R$", "%.2f" % (preco*quant), "\n")
             vfcompra = float(vfcompra + preco * quant)
         elif(cod == 0):
-            print("Total da compra: R$", "%.2f" % vfcompra)
+            print("Total da compra: R$", "%.2f" % vfcompra, "\n")
+            print("-----------------------------------")
             break
         else:
-            print("Produto inválido")
+            print("-----------------------------------")
+            print("\nProduto inválido! \n")
+            print("-----------------------------------")
             continue
