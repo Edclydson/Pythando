@@ -1,4 +1,3 @@
-# ideias: tornar os blocos de if/elif funções e só chamar quando entrar na condição
 candidatos = [['1', 'Joao', 0], ['2', 'Maria', 0],
               ['3', 'Oliveira', 0], ['4', 'Pedro', 0]]
 vtnulo = 0  # variavel p contar votos nulos
