@@ -1,7 +1,8 @@
+#   from random import *
 jogadores = []
 c = 0
 tot = 0  # variavel p contar total de votos
-
+n = 0
 # adicionando os 23 jogadores na lista
 for i in range(1, 24):
     jogadores.append([str(i), 0])
@@ -30,7 +31,8 @@ def fim():  # função encerra votação
 
 
 while(1 > 0):  # loop infinito p votação n acabar
-    vt = input("Qual o seu voto: ")
+    # n = randint(0, 23) funçao p gerar os numeros aleatorios de 0 ate 23
+    vt = input("Digite seu voto! ")  # str(n)
     tot = tot + 1
     for c in range(len(jogadores)):
         if (vt == "1"):
