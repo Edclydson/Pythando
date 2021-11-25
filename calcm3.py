@@ -6,7 +6,7 @@ def caixa_retangular(altura, largura, comprimento):
 
 
 def caixa_cilindrica(altura, raio):
-    m3 = altura * raio
+    m3 = ((altura * (raio**2)) * 3.14)
     print("A capacidade é de:", "%.2f" %
           m3, "m³. Com capacidade para:", "%.0f" % (m3*1000), "L")
 
