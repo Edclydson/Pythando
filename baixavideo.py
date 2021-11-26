@@ -1,14 +1,16 @@
-#IMPORTS NECESSARIOS
+# IMPORTS NECESSARIOS
 from pytube import YouTube
 import pyautogui
 from os import path
-#PEGANDO O PATH
+# PEGANDO O PATH
 main = path.join(path.expanduser("~"))
 
 while(True):
     url = pyautogui.prompt("Cole a url aqui:")
     video = YouTube(url)
-    stream = video.streams.get_highest_resolution() #BAIXANDO O VIDEO NA MELHOR RESOLUÇAO POSSIVEL
+    # BAIXANDO O VIDEO NA MELHOR RESOLUÇAO POSSIVEL
+    stream = video.streams.get_highest_resolution()
 
-    stream.download(output_path=main+'\\Videos') #SALVANDO NA PASTA VIDEOS DO WINDOWS
+    # SALVANDO NA PASTA VIDEOS DO WINDOWS
+    stream.download(output_path=main+'\\Videos')
     pyautogui.alert("Video baixado!")
