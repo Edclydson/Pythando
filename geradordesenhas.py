@@ -1,7 +1,12 @@
 import random
 import pyautogui
 
-caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%*'
+caracteres_maiusc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+caracteres_minusc = 'abcdefghijklmnopqrstuvwxyz'
+caracteres_numespec = '0123456789!@#$%*'
 lenght = 12
-passwrd = "".join(random.sample(caracteres, lenght))
-pyautogui.alert("Sua senha é: "+passwrd)
+
+pyautogui.alert("Sua senha é: "+"".join(random.sample(caracteres_maiusc +
+                                                      caracteres_minusc +
+                                                      caracteres_numespec,
+                                                      lenght)))
