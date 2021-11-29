@@ -1,7 +1,7 @@
 import requests
 import json
 
-
+# CONSULTA CLIMA DE FORTALEZA VIA API CLIMATEMPO
 # ID FORTALEZA 8050
 token = "INSIRA O TOKEN AQUI"
 idcidade = '8050'
