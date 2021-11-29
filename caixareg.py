@@ -17,13 +17,11 @@ Produto 2: R$ 5.80
 Produto 3: R$ 0
 Total: R$ 9.00
 '''
-contador = 1000
 x = 1
 compra = 0.0
 print("LOJAS TABAJARA\n")
-while(1 > 0):
-    while(x < contador):
-
+while(True):
+    while(True):
         preco = float(input("R$ "))
         print("Produto", x, ": R$ ", "%.2f" % preco)
         compra = float(compra + preco)
