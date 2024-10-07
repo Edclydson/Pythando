@@ -1,13 +1,14 @@
 # IMPORTS NECESSARIOS
-from pytube import YouTube
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 import pyautogui
 from os import path
 # PEGANDO O PATH
 main = path.join(path.expanduser("~"))
 
-while(True):
+while True:
     url = pyautogui.prompt("Cole a url aqui:")
-    video = YouTube(url)
+    video = YouTube(url, on_progress_callback=on_progress)
     # BAIXANDO O VIDEO NA MELHOR RESOLUÇAO POSSIVEL
     stream = video.streams.get_highest_resolution()
 
